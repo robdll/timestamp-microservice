@@ -19,8 +19,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <p className={styles.description}>Example Usage:</p>
-        <code className={styles.code}>[project url]/api/2015-12-25</code>
-        <code className={styles.code}>[project url]/api/1451001600000</code>
+        <code className={styles.code}>
+          [project url]/api/timestamp/2015-12-25
+        </code>
+        <code className={styles.code}>
+          [project url]/api/timestamp/1451001600000
+        </code>
+        <code className={styles.code}>[project url]/api/timestamp</code>
 
         <p className={styles.description}>Example Output:</p>
         <code className={styles.code}>
@@ -31,11 +36,14 @@ export default function Home() {
         </code>
 
         <p className={styles.description}>Try it out</p>
-        <Link href="/api/2015-12-25">
-          <a className={styles.link}>/api/2015-12-25</a>
+        <Link href="/api/timestamp/2015-12-25">
+          <a className={styles.link}>/api/timestamp/2015-12-25</a>
         </Link>
-        <Link href="/api/1451001600000">
-          <a className={styles.link}>/api/1451001600000</a>
+        <Link href="/api/timestamp/1451001600000">
+          <a className={styles.link}>/api/timestamp/1451001600000</a>
+        </Link>
+        <Link href="/api/timestamp">
+          <a className={styles.link}>/api/timestamp</a>
         </Link>
       </main>
     </div>
