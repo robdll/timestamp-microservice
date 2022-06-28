@@ -7,7 +7,6 @@ export default function handler(req, res) {
     res.status(422).json({ error: "Invalid date" });
   } else {
     const date = isTimestamp ? new Date(val) : new Date(dateParam);
-    console.log(date, isTimestamp);
     const data = {
       unix: date.getTime(),
       utc: date.toUTCString(),
